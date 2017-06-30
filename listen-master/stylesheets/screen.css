@@ -189,7 +189,7 @@ body {
   border-radius: 5px 5px;
 }
 /* line 232, ../sass/screen.scss */
-.product .conteiner-test {
+.product .product__acquisition {
   margin: 20px 0 0 0;
   background: #24CF91;
   border-radius: 0 0 5px 5px;
