@@ -24,6 +24,11 @@ $color__dangerous:       #951808;
 $color__success:	     #24CF91;
 
 
+$color__danger:             #7B3801;
+$color__dangerous:          #951808;
+$color__success:	        #24CF91;
+
+
 $color__warning:		  orange;
 
 .wrap {
@@ -117,6 +122,13 @@ body {
     .header__mail-link {
         text-decoration:            none;
         color:            $color__danger;
+    }
+
+    .header__mail { }
+
+    .header__mail-link {
+        text-decoration:            none;
+        color:             $color__danger;
         font-size:        $font-size__xl;
         border-bottom: 1px solid $color__danger;
     }
@@ -155,6 +167,27 @@ body {
     }
 }
 
+    .header__nav {
+        padding:                 10px 0 0 0;
+        text-decoration:               none;
+        border-bottom:    1px solid $color__success;
+        color:                      $color__success;
+        margin:                  0 25px 0 0;
+        white-space:                 nowrap;
+    }
+
+    .header__nav-link:hover {
+        color:                $color__danger;
+        border-bottom:                 none;
+    }
+
+    .header__nav-link_active {
+        color:               $color__danger;
+        border-bottom:                 none;
+    }
+
+
+
 //
 // Block Main Section
 //  _____________________________________________
@@ -166,35 +199,36 @@ body {
 
     .main-section-i {
         @extend .wrap;
+        min-height:         670px;
         overflow:                 hidden;
         padding-top:                40px;
         align-items:         flex-start;
     }
 
     .main-section__menu {
-        width:                     220px;
-        border-radius:               5px;
-        background:              #FBFBFB;
-        margin:              0 10px 40px;
+        width:                         220px;
+        border-radius:                   5px;
+        background:                  #FBFBFB;
+        margin:                  0 10px 40px;
     }
 
     .main-section__list {
-        text-align:               center;
+        text-align:                   center;
     }
 
     .main-section__item {
-        list-style-type:            none;
+        list-style-type:                none;
     }
 
     .main-section__link {
-        text-decoration:            none;
-        color:            $color__danger;
-        font-size:         $font-size__l;
-        font-weight:                bold;
-        display:                   block;
-        padding:                  18px 0;
-        border-radius:       5px 5px 0 0;
-        border-bottom: 1px solid #EDE4DB;
+        text-decoration:                none;
+        color:                $color__danger;
+        font-size:             $font-size__l;
+        font-weight:                    bold;
+        display:                       block;
+        padding:                      18px 0;
+        border-radius:           5px 5px 0 0;
+        border-bottom:     1px solid #EDE4DB;
 
         &:hover {
             background: linear-gradient(to top, #FFE5E1, #FFF);
@@ -208,18 +242,18 @@ body {
     }
 
     .main-section__search {
-        border:       1px solid #FA624D;
-        text-decoration:           none;
-        color:                  #FDBBB4;
-        padding:         5px 0 5px 25px;
-        border-radius:             20px;
-        margin:                  20px 0;
-        text-align:                left;
-        font-size:     $font-size__base;
+        border:           1px solid #FA624D;
+        text-decoration:               none;
+        color:                      #FDBBB4;
+        padding:             5px 0 5px 25px;
+        border-radius:                 20px;
+        margin:                      20px 0;
+        text-align:                    left;
+        font-size:         $font-size__base;
         background-image: url(img/search.png);
-        background-repeat:    no-repeat;
-        background-position:        4px;
-        outline:                   none;
+        background-repeat:        no-repeat;
+        background-position:            4px;
+        outline:                       none;
     }
 }
 
@@ -229,13 +263,14 @@ body {
     padding-top:         10px;
     border-radius:         5px 5px;
     
-    .product__acquisition {
-        margin:         20px 0 0 0;
-        background:         #24CF91;
-        border-radius:         0 0 5px 5px;
-    } 
 
 }
+
+.conteiner-test {
+    background:         #24CF91;
+    border-radius:         05px 5px;
+}
+
 
 
 
@@ -326,3 +361,4 @@ body {
         border-bottom:     1px solid $color__danger;
     }
 }
+
