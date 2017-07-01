@@ -130,27 +130,25 @@ body {
 }
 /* line 173, ../sass/screen.scss */
 .main-section .main-section-i {
-  min-height: 670px;
-  overflow: hidden;
   padding-top: 40px;
   align-items: flex-start;
 }
-/* line 181, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .main-section .main-section__menu {
   width: 220px;
   border-radius: 5px;
   background: #FBFBFB;
   margin: 0 10px 40px;
 }
-/* line 188, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .main-section .main-section__list {
   text-align: center;
 }
-/* line 192, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .main-section .main-section__item {
   list-style-type: none;
 }
-/* line 196, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .main-section .main-section__link {
   text-decoration: none;
   color: #7B3801;
@@ -161,17 +159,17 @@ body {
   border-radius: 5px 5px 0 0;
   border-bottom: 1px solid #EDE4DB;
 }
-/* line 206, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .main-section .main-section__link:hover {
   background: linear-gradient(to top, #FFE5E1, #FFF);
   color: #951808;
 }
-/* line 211, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .main-section .main-section__link.main-section__link_active {
   background: linear-gradient(to top, #FFE5E1, #FFF);
   color: #951808;
 }
-/* line 217, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .main-section .main-section__search {
   border: 1px solid #FA624D;
   text-decoration: none;
@@ -187,13 +185,14 @@ body {
   outline: none;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .product {
   background: #fff;
   text-align: center;
   padding-top: 10px;
   border-radius: 5px 5px;
-  margin-right: 10px;
+  margin: 0 10px;
+  min-width: 170px;
 }
 /* line 244, ../sass/screen.scss */
 .product .product__barell {
@@ -204,14 +203,14 @@ body {
   color: #7B3801;
   font-weight: bold;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 20px;
 }
 /* line 256, ../sass/screen.scss */
 .product .product__acquisition {
   background: #24CF91;
   border-radius: 0 0 5px 5px;
-  min-height: 120px;
+  min-height: 135px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -219,42 +218,44 @@ body {
 /* line 265, ../sass/screen.scss */
 .product .product__description {
   color: white;
-  margin: 15px 0 0 0;
+  font-size: 16px;
+  margin: 20px 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
-/* line 270, ../sass/screen.scss */
-.product .product__wrap-bottom {
-  margin: 0 0 10px;
-}
-/* line 274, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .product .product__bottom {
   display: inline-block;
   text-decoration: none;
   background: #FA6F04;
   color: white;
-  padding: 5px 25px;
-  border-radius: 5px;
-  margin: 0 0 0 0;
+  padding: 10px 25px;
+  border-radius: 10px;
   border: 1px solid #B94E01;
   font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0 0 10px 0;
+  font-size: 14px;
 }
-/* line 285, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .product .product__bottom.product__bottom:hover {
   color: white;
   background: #EB922B;
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .footer {
   background-image: url(img/background-footer.png);
   background-repeat: repeat-x;
   min-width: 960px;
 }
-/* line 316, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .footer .footer-i {
   flex-wrap: wrap;
   align-content: space-between;
 }
-/* line 322, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .footer .footer__payment {
   margin: 20px 80px 0 10px;
   white-space: nowrap;
@@ -262,12 +263,12 @@ body {
   line-height: 24px;
   color: #7B3801;
 }
-/* line 330, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .footer .footer__title-payment {
   font-weight: bold;
   font-size: 14px;
 }
-/* line 335, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .footer .footer__requisites {
   margin: 20px 80px 0 5px;
   white-space: nowrap;
@@ -275,16 +276,16 @@ body {
   line-height: 24px;
   color: #7B3801;
 }
-/* line 343, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .footer .footer__title-requisites {
   font-weight: bold;
   font-size: 14px;
 }
-/* line 348, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 .footer .footer__contact {
   margin: 25px 0 70px;
 }
-/* line 352, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .footer .footer__phone-link {
   text-decoration: none;
   font-size: 14px;
@@ -292,20 +293,20 @@ body {
   color: #7B3801;
   font-weight: bold;
 }
-/* line 361, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 .footer .footer__mail-link {
   text-decoration: none;
   font-size: 14px;
   color: #7B3801;
 }
-/* line 368, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .footer .footer__development {
   width: 100%;
   text-align: right;
   margin: 0 0 20px 0;
   color: #7B3801;
 }
-/* line 375, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 .footer .footer__designation {
   font-weight: bold;
   color: #7B3801;

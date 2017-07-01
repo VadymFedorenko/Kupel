@@ -172,8 +172,7 @@ body {
 
     .main-section-i {
         @extend .wrap;
-        min-height:         670px;
-        overflow:                 hidden;
+
         padding-top:                40px;
         align-items:         flex-start;
     }
@@ -235,7 +234,8 @@ body {
     text-align:         center;
     padding-top:         10px;
     border-radius:         5px 5px;
-    margin-right:     10px;
+    margin:     0 10px;
+    min-width:     170px;
 
     .product__helper {
         
@@ -249,14 +249,14 @@ body {
         color:                $color__danger;
         font-weight:     bold;
         display:     inline-block;
-        margin-bottom:     10px;
+        margin-bottom:     15px;
         font-size:     $font-size__xxl;
     }
 
     .product__acquisition {
         background:         $color__success;
         border-radius:       0 0 5px 5px;
-        min-height:     120px;
+        min-height:     135px;
         display:     flex;
         flex-direction:     column;
         justify-content:     space-between;
@@ -264,11 +264,14 @@ body {
 
     .product__description {
         color:     $color__default;
-        margin:     15px 0 0 0;
+        font-size:     $font-size__l;
+        margin:     20px 10px 0;
+        white-space:     nowrap;
+        overflow:     hidden;
     }
 
     .product__wrap-bottom {
-        margin:     0 0 10px;
+        
     }
 
     .product__bottom {
@@ -276,11 +279,14 @@ body {
         text-decoration:     none;
         background:     $color__warning;
         color:     $color__default;
-        padding:     5px 25px;
-        border-radius:     5px;
-        margin:     0 0 0 0;
+        padding:     10px 25px;
+        border-radius:     10px;
         border:     1px solid #B94E01;
         font-weight:     bold;
+        text-transform:     uppercase;
+        white-space:     nowrap;
+        margin:     0 0 10px 0;
+        font-size:     $font-size__m;
 
         &.product__bottom:hover {
             color:     $color__default;
